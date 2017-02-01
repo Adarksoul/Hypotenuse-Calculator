@@ -9,14 +9,16 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char* argv[]){
-	double hypotenuse = 0.0;
+int main(int argc, char *argv[]){
+	double inputOne, inputTwo, hypotenuse = 0.0;
 	
-
+	inputOne = atof(argv[1]);
+	inputTwo = atof(argv[2]);
 	
-	hypotenuse = sqrt(pow(argv[1],2) + pow(argv[2],2));
+	hypotenuse = sqrt(pow(inputOne,2) + pow(inputTwo,2));
 	
 	printf("%.6lf", hypotenuse);
 	
